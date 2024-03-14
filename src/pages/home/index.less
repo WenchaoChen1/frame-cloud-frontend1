@@ -1,0 +1,84 @@
+.pageContainer {
+  .contentBox {
+    width: 800px;
+    margin-inline: auto;
+    //border: 1px solid red;
+  }
+
+  .messageBox {
+    margin-top: 20px;
+    height: 750px;
+    //height: 200px;
+    margin-inline: auto;
+    overflow-y: auto;
+    //border: 1px solid purple;
+  }
+  .messageBox::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .messageRow {
+    margin: 20px 10px;
+    //border: 1px solid green;
+  }
+
+  .messageTextBox {
+    margin-left: 10px;
+    width: 710px;
+    word-wrap: break-word;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .myMessageTextBox {
+    padding: 4px 14px;
+    font-weight: 500;
+  }
+  .otherMessageTextBox {
+    padding: 15px 14px;
+    overflow-x: auto;
+    background-color: white;
+    border: 1px solid #f1eeee;
+    border-radius: 4px;
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .thead {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    border-top: 1px solid #f1eeee;
+    border-bottom: 1px solid #f1eeee;
+  }
+
+  .tableRow {
+    border-bottom: 1px solid #f1eeee;
+  }
+
+  .tableCell {
+    padding: 10px 5px;
+    text-align: center;
+  }
+
+  .sendRow {
+    position: fixed;
+    bottom: 10px;
+    width: auto;
+    .sendBtn {
+      position: relative;
+      right: 80px;
+      width: 68px;
+      color: @yellow-7;
+      cursor: pointer;
+    }
+
+    .sendInput {
+      height: 55px;
+      width: 800px;
+    }
+  }
+
+}

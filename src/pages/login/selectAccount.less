@@ -1,0 +1,56 @@
+@import '../common/variable';
+
+.container {
+  height: 100%;
+  background-color: @whiteColor;
+  .titleBox {
+    margin-bottom: 20px;
+    height: 60px;
+  }
+
+  .selectTitle {
+    margin: 24px;
+    color: #0D2B56;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  .contentBox {
+    flex-wrap: wrap;
+    margin-inline: 15%;
+    //border: 1px solid purple;
+  }
+
+  .accountCard {
+    margin-right: 24px;
+    margin-bottom: 20px;
+    padding: 24px;
+    width: 290px;
+    height: 260px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+  }
+  .accountCard:hover {
+    box-shadow: 2px 4px 10px 4px rgba(0, 0, 0, 0.10);
+  }
+
+  .accountName {
+    color: #0D2B56;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .accountType {
+    margin-top: 8px;
+    color: #848688;
+    text-align: center;
+    font-weight: 450;
+    line-height: 20px;
+  }
+}
+

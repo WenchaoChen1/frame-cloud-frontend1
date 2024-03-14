@@ -1,0 +1,131 @@
+@import './pages/common/variable';
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: @fontPrimary;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  height: calc(100% - 60px);
+  inset-block-start: 60px;
+  background: #FFF;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.ant-result-403 {
+  .ant-result-subtitle {
+    visibility: hidden;
+  }
+
+  .ant-result-subtitle:after {
+    position: relative;
+    left: -50px;
+    content: 'Sorry, you are not authorized to access this page.';
+    visibility: visible;
+  }
+
+  .ant-result-extra span {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .ant-result-extra button:after {
+    content: 'Back Home';
+    visibility: visible;
+  }
+}
+
+// reset 'Loading chunk failed' problem
+.ant-result-error {
+  .ant-result-icon {
+    visibility: hidden;
+  }
+
+  .ant-result-title {
+    visibility: hidden;
+  }
+
+  .ant-result-title:after {
+    position: relative;
+    left: -50px;
+    visibility: visible;
+    content: 'Sorry, Something wrong with the network, please refresh the page.';
+  }
+
+  .ant-result-extra {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+
+.ant-pro .ant-pro-layout .ant-pro-layout-container {
+  background-color: #eff2f5;
+}
+
+.ant-pro .ant-pro-layout .ant-pro-sider {
+  height: 100%;
+  background: #FFF;
+}
+
+.ant-pro-global-footer-copyright {
+  background: none;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  color: #000;
+}
+
+.ant-modal-content {
+  border-radius: 8px !important;
+  .ant-modal-header {
+    border-bottom: 0px;
+    border-radius: 8px;
+  }
+  .ant-modal-close-x {
+    color: #1B1B1B;
+  }
+}
