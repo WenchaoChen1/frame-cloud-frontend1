@@ -5,7 +5,7 @@ export async function oauth2Token(params: API.Oauth2TokenParamsDataType) {
   return request<API.Oauth2TokenResultDataType>('/api/gstdev-identity/oauth2/token', {
     method: 'POST',
     headers: {
-      Authorization: 'Basic cGFzc3dvcmQtY2xpZW50OmJsYWNrMTIz'
+      Authorization: 'Basic cGFzc3dvcmQtY2xpZW50OjEyMzQ1Ng=='
     },
     params: params,
   }).then((response: any) => {

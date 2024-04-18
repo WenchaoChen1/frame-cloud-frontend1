@@ -129,16 +129,16 @@ const Login: React.FC = () => {
               size: 'large',
             }}
             placeholder={'email'}
-            rules={[
-              {
-                required: true,
-                message: 'Please input your email',
-              },
-              {
-                type: 'email',
-                message: "Please enter a valid email address"
-              }
-            ]}
+            // rules={[
+            //   {
+            //     required: true,
+            //     message: 'Please input your email',
+            //   },
+            //   {
+            //     type: 'email',
+            //     message: "Please enter a valid email address"
+            //   }
+            // ]}
           />
           <ProFormText.Password
             name="password"

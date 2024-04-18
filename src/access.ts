@@ -18,7 +18,7 @@ export default function access(initialState: initialStateType) {
     canAdmin: currentUser && currentUser?.accountType === '0',
     // normalRouteFilter: (route: any) => currentUser?.permission.includes(route.name),
     normalRouteFilter: (route: routeItemType) => {
-      // return true;
+      return true;
       // develop super admin
       if (currentUser?.accountType === '0') {
         return true;

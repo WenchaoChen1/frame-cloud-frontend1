@@ -1,4 +1,4 @@
-const target = 'http://192.168.0.99:8201';
+const target = 'http://192.168.0.229:8201';
 // test
 // const target = 'http://34.194.117.233:8201';
 // uat

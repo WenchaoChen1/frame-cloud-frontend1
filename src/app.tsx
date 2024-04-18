@@ -195,9 +195,7 @@ export async function getInitialState(): Promise<getInitialStateDateType> {
         redirect = '';
         const dynamicRouteTree = handleRouteTree(accountInfoResponse?.data?.currentLoginAccountUserPermissions || []);
         dynamicRouteTree.permission = handleAdminPermission(currentUser, dynamicRouteTree.permission);
-
         currentUser = {...currentUser, ...dynamicRouteTree};
-        console.log('fetchUserInfo', currentUser);
 
         return currentUser;
       }
@@ -280,8 +278,8 @@ export const layout: RunTimeLayoutConfig = ({ initialState }) => {
       },
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       request: async (params: any, defaultMenuData: any) => {
-        // return defaultMenuData;
-        return initialState?.currentUser?.dynamicRouteTree;
+        return defaultMenuData;
+        // return initialState?.currentUser?.dynamicRouteTree;
       },
     },
     headerRender: () => headerRender(),
